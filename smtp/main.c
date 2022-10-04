@@ -18,12 +18,15 @@ int main(int argc, char* argv[]) {
     return -1;
   }
 
-  char* rcpt = argv[1];
-  char* filepath = argv[2];
+  // char* rcpt = argv[1];
+  // char* filepath = argv[2];
 
   /* 
      STUDENT CODE HERE
    */
-  
+
+  int socket = connect_smtp("lunar.open.sice.indiana.edu", 25);
+
+  printf("%d",socket);
   return 0;
 }

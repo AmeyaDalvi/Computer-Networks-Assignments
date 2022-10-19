@@ -145,10 +145,8 @@ def udp_client(host, port):
     print("Hello, I am a client")
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) 
     host_port = ''
-    for fa, ty, flags, _, addr in socket.getaddrinfo(host,port, socket.AF_INET, socket.SOCK_STREAM):
-        host_port = addr
-    # host_port = socket.getaddrinfo(host, port, socket.AF_INET, socket.SOCK_DGRAM)
-    # host_port = host_port[0][4]
+    host_port = socket.getaddrinfo(host, port, socket.AF_INET, socket.SOCK_DGRAM)
+    host_port = host_port[0][4]
     print(host_port)
     s.connect(host_port)
     while True:

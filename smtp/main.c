@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <string.h>
+<<<<<<< HEAD
 #include <stdlib.h>
+=======
+>>>>>>> upstream/main
 
 int connect_smtp(const char* host, int port);
 void send_smtp(int sock, const char* msg, char* resp, size_t len);
@@ -25,6 +28,7 @@ int main(int argc, char* argv[]) {
   /* 
      STUDENT CODE HERE
    */
+<<<<<<< HEAD
 
   int socket = connect_smtp("lunar.open.sice.indiana.edu", 25);
   FILE* file_ptr;
@@ -86,4 +90,8 @@ int main(int argc, char* argv[]) {
   
   return 0;
 
+=======
+  
+  return 0;
+>>>>>>> upstream/main
 }

@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <string.h>
+<<<<<<< HEAD
 #include <stdlib.h>
+=======
+>>>>>>> upstream/main
 
 void send_http(char* host, char* msg, char* resp, size_t len);
 
@@ -19,6 +22,7 @@ int main(int argc, char* argv[]) {
   char* verb = argv[2];
   char* path = argv[3];
 
+<<<<<<< HEAD
 
   /*
     STUDENT CODE HERE
@@ -48,4 +52,11 @@ int main(int argc, char* argv[]) {
   printf("%s\n", response);
   return 0;
 
+=======
+  /*
+    STUDENT CODE HERE
+   */
+  
+  return 0;
+>>>>>>> upstream/main
 }

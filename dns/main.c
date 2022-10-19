@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <sys/types.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -6,12 +7,19 @@
 #include <sys/socket.h>
 #include <netdb.h>
 #include <arpa/inet.h>
+=======
+#include <stdio.h>
+#include <stdlib.h>
+>>>>>>> upstream/main
 
 /*
   Use the `getaddrinfo` and `inet_ntop` functions to convert a string host and
   integer port into a string dotted ip address and port.
  */
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/main
 int main(int argc, char* argv[]) {
   if (argc != 3) {
     printf("Invalid arguments - %s <host> <port>", argv[0]);
@@ -24,6 +32,7 @@ int main(int argc, char* argv[]) {
     STUDENT CODE HERE
    */
 
+<<<<<<< HEAD
   // https://www.educative.io/answers/how-to-use-the-sprintf-method-in-c
   // Converting port (service) to char*
 
@@ -68,6 +77,8 @@ int main(int argc, char* argv[]) {
     }
     /* Use raw_addr as a generic address for inet_ntop */
   }
+=======
+>>>>>>> upstream/main
 
   return 0;
 }
